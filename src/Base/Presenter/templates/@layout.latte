@@ -1,0 +1,11 @@
+{layout $parameters['modules']['modette/core-ext-ui']['dir'] . '/src/Presenter/Base/templates/@layout.latte'}
+
+{define container}
+    {ifset content}
+        {include content|indent:2}
+    {else}
+		<p>
+			Define <code>{l}block content{r}</code> or redefine <code>{l}block container{r}</code> to render presenter template
+		</p>
+    {/ifset}
+{/define}
